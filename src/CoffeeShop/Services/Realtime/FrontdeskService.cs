@@ -26,7 +26,7 @@ namespace CoffeeShop.Services
         public async Task MakeCoffee(string user)
         {
             // Announce that the order is received
-            await Clients.All.ReceiveMessage(user, $"Can I get a coffee please? {DateTime.UtcNow}");
+            await Clients.All.ReceiveMessage(user, $"Placed an order. {DateTime.UtcNow}");
 
             _logger.LogInformation($"{DateTime.UtcNow}: Make coffee request received from {user}.");
 
@@ -39,7 +39,7 @@ namespace CoffeeShop.Services
             );
             
             // Announce that the order is received
-            await Clients.All.ReceiveMessage("Front desk", $"Hi {user}, your order is received. {DateTime.UtcNow}");
+            await Clients.All.ReceiveMessage("Front desk", $"Hi {user}, your order is put into a queue. {DateTime.UtcNow}");
 
         }
 

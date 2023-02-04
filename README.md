@@ -10,6 +10,9 @@ A monolithic web application to show case how to complete long-running tasks usi
 * Clone the repo
 * Run the "CoffeeShop" project in Visual Studio or in command line
 
+# Give a star
+:star: If you enjoy this project, or are using this project to start your exciting new project, or are just forking it to play, please give it a star. Much appreciated! :star: 
+
 # Additional Resources
 I have published some short articles to cover different aspects of this project. Please feel free to give them a read.
 
